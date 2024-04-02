@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+    volumes:
+      - /home/dilshan/mysqlVolume:/var/lib/mysql
+    ports:
+      - "3306:3306"
